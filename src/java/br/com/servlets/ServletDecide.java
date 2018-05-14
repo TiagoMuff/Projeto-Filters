@@ -23,7 +23,7 @@ public class ServletDecide extends HttpServlet {
             response.sendRedirect("Coelho.jsp");
 
         } else {
-            response.sendRedirect("acessoNegado.jsp");
+            response.sendRedirect("AcessoNegado.jsp");
         }
 
     }

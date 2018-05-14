@@ -21,7 +21,7 @@
         <div>
             <br>
             <form action="ServletDecide" method="POST">
-                <input type="submit" value="TIAGO" style="color: red" />
+                <input type="submit" value="TIAGO"  name="btnT"  style="color: red" />
             </form>
             </br>
             <!--            <br> <a style="color: red" href="ServletDecide">  PAGINA TIAGO</a>  </br>-->
@@ -31,7 +31,7 @@
             <br>
 
             <form action="ServletDecide" method="POST">
-                <input type="submit" value="COELHO" style="color: lime"   />
+                <input type="submit" value="COELHO"  name="btnC"  style="color: lime"   />
             </form>
             </br>
             <!--            <br> <a style="color: blue" href="ServletDecide">PAGINA COELHO</a>  </br>-->
