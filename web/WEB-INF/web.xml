@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <filter>
+        <filter-name>Filtro</filter-name>
+        <filter-class>br.com.filters.Filtro</filter-class>
+    </filter>
+    
+    <filter-mapping>
+        <filter-name>Filtro</filter-name>
+        <url-pattern>/Servlet_Login</url-pattern>
+    </filter-mapping>  
+
+    <filter>
+        <filter-name>Filtro2</filter-name>
+        <filter-class>br.com.filters.Filtro2</filter-class>
+    </filter>
+    
+    <filter-mapping>
+        <filter-name>Filtro2</filter-name>
+        <url-pattern>/ServletDecide</url-pattern>
+    </filter-mapping>  
+
+
+    <servlet>
+        <servlet-name>Servlet_Login</servlet-name>
+        <servlet-class>br.com.servlets.Servlet_Login</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>Servlet_out</servlet-name>
+        <servlet-class>br.com.servlets.Servlet_out</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>ServletDecide</servlet-name>
+        <servlet-class>br.com.servlets.ServletDecide</servlet-class>
+    </servlet>
+    
+    
+    <servlet-mapping>
+        <servlet-name>Servlet_Login</servlet-name>
+        <url-pattern>/Servlet_Login</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>Servlet_out</servlet-name>
+        <url-pattern>/Servlet_out</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>ServletDecide</servlet-name>
+        <url-pattern>/ServletDecide</url-pattern>
+    </servlet-mapping>
+  
+  
+</web-app>
