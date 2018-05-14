@@ -21,21 +21,13 @@
         <div>
             <br>
             <form action="ServletDecide" method="POST">
-                <input type="submit" value="TIAGO"  name="btnT"  style="color: red" />
-            </form>
-            </br>
-            <!--            <br> <a style="color: red" href="ServletDecide">  PAGINA TIAGO</a>  </br>-->
-        </div>
-
-        <div> 
-            <br>
-
-            <form action="ServletDecide" method="POST">
+                <input type="submit" value="TIAGO"  name="btnT"  style="color: red" /> <br></br>
                 <input type="submit" value="COELHO"  name="btnC"  style="color: lime"   />
             </form>
             </br>
-            <!--            <br> <a style="color: blue" href="ServletDecide">PAGINA COELHO</a>  </br>-->
+
         </div>
+
 
         <br>
         <form action="Servlet_out" method="post">
