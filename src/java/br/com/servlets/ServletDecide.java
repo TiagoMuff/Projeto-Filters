@@ -13,19 +13,19 @@ public class ServletDecide extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        
         HttpSession session = request.getSession();
         String n = (String) session.getAttribute("name");
 
-        if (n.equals("Tiago")) {
+        if (n.equals("Tiago") && request.getParameter("btnT") != null) {
             response.sendRedirect("Tiago.jsp");
 
-        } else if (n.equals("Coelho")) {
-
+        } else if (n.equals("Coelho") && request.getParameter("btnC") != null) {
             response.sendRedirect("Coelho.jsp");
 
+        } else {
+            response.sendRedirect("acessoNegado.jsp");
         }
-      
+
     }
 
 }
